@@ -15,3 +15,5 @@ match operations:
         print(f"The result is {num1 * num2}.")
     case '/':
         print(f"The result is {num1 / num2}.")
+    case _:
+        print("Cannot divide by zero.")
