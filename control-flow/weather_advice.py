@@ -1,7 +1,7 @@
 # Weather advice app
 
 # Creating the weather variable that prompts the user
-weather = input("What's the weather like today ?(sunny/rainy/cold): ")
+weather = input("What's the weather like today? (sunny/rainy/cold): ")
 
 # using the if to check what the user input
 if weather.lower() == 'sunny':
