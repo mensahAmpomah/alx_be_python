@@ -8,12 +8,16 @@ operations = input("Choose the operation (+,-,*,/): ")
 
 match operations:
     case '+':
-        print(f"The result is {num1 + num2}.")
+        result = num1 + num2
+        print(f"The result is {result}.")
     case '-':
-        print(f"The result is {num1 - num2}.")
+        result = num1 - num2
+        print(f"The result is {result}.")
     case '*':
-        print(f"The result is {num1 * num2}.")
+        result = num1 * num2
+        print(f"The result is {result}.")
     case '/':
-        print(f"The result is {num1 / num2}.")
+        result = num1 / num2
+        print(f"The result is {result}.")
     case _:
         print("Cannot divide by zero.")
