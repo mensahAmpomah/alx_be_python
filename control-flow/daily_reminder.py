@@ -1,15 +1,15 @@
 # Daily reminder App
 
-user = input("Enter you task")
-priority = input("Priority (high,medium,low)")
-time_bound = input("Is it time-bound?(yes/no): ")
+Task = input("Enter you task")
+Priority = input("Priority (high,medium,low)")
+Time_bound = input("Is it time-bound?(yes/no): ")
 
-match priority:
+match Priority:
     case 'high':
-        if time_bound == 'yes':
-            print(f"Reminder: {user} is a {priority} task that requires immediate attention today!")
+        if Time_bound == 'yes':
+            print(f"Reminder: {Task} is a {Priority} task that requires immediate attention today!")
     case 'low':
-        if time_bound == 'no':
-            print(f"Note: {user} is a {priority} priority task. Consider completing it when you have free time.")
+        if Time_bound == 'no':
+            print(f"Note: {Task} is a {Priority} priority task. Consider completing it when you have free time.")
     case _ :
         print("You didn't enter any task !")
