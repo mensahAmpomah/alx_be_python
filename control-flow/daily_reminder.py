@@ -1,6 +1,6 @@
 # Daily reminder App
 
-user = input("Enter you task: ")
+user = input("Enter your task: ")
 priority = input("Priority (high,medium,low): ")
 time_bound = input("Is it time-bound?(yes/no): ")
 
