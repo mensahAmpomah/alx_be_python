@@ -25,23 +25,23 @@ def view_list():
         print("Your shopping list is currently empty.")
 
 def display_menu():
-    print("Menu: ")        
+    print("Shopping List Manager")        
     print("1. Add Item")        
     print("2. Remove Item")        
     print("3. View Shopping List")        
-    print("4. Exit ")        
+    print("4. Exit")        
 
 while True:
     display_menu()
-    choice = input("Choose an option (1 - 4): ")
+    choice = int(input("Choose an option (1 - 4): "))
 
-    if choice == '1':
+    if choice == 1:
         add_item()
-    elif choice == '2':
+    elif choice == 2:
         remove_item()
-    elif choice == '3':
+    elif choice == 3:
         view_list()
-    elif choice == '4':
+    elif choice == 4:
         print("Exiting the program. Goodbye!")
         break
     else:
