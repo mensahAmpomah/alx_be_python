@@ -24,6 +24,6 @@ def temperature_converter():
             print("Please enter 'C' for Celsius or 'F' for Fahrenheit.")
 
     except ValueError:
-        raise ValueError("Please enter a numeric value.")
+        raise ValueError("Invalid temperature. Please enter a numeric value.")
     
 temperature_converter()
