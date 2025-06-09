@@ -26,22 +26,22 @@ def view_list():
 
 def display_menu():
     print("Menu: ")        
-    print("1. Add Item ")        
-    print("2. Remove Item ")        
-    print("3. View Shopping List ")        
+    print("1. Add Item")        
+    print("2. Remove Item")        
+    print("3. View Shopping List")        
     print("4. Exit ")        
 
 while True:
     display_menu()
-    choose = input("Choose an option (1 - 4): ")
+    choice = input("Choose an option (1 - 4): ")
 
-    if choose == '1':
+    if choice == '1':
         add_item()
-    elif choose == '2':
+    elif choice == '2':
         remove_item()
-    elif choose == '3':
+    elif choice == '3':
         view_list()
-    elif choose == '4':
+    elif choice == '4':
         print("Exiting the program. Goodbye!")
         break
     else:
