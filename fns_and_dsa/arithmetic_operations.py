@@ -15,8 +15,8 @@ def perform_operation(num1, num2, operation):
         if num1 != 0 & num2 != 0: 
             results = num1 / num2
             return results
-        else:
-            print('You entered zero as the first number which is not possible in division.')
+        elif num2 == 0:
+            print('You entered zero as the second number which is not possible in division.')
             return results
     else:
         print('Enter the correct operation')
