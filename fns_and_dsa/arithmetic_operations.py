@@ -12,7 +12,11 @@ def perform_operation(num1, num2, operation):
         results = num1 * num2
         return results
     elif operation == 'divide':
-        results = num1 / num2
-        return results
+        if num1 != 0 & num2 != 0: 
+            results = num1 / num2
+            return results
+        else:
+            print('You entered zero as the first number which is not possible in division.')
+            return results
     else:
         print('Enter the correct operation')
