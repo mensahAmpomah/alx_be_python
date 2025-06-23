@@ -4,7 +4,7 @@ class Book:
         self.author = author
 
     def get_details(self):
-        return f"Book: {self.title}, Author: {self.author}"
+        return f"Book: {self.title} by {self.author}"
     
     def __str__(self):
         return self.get_details()
