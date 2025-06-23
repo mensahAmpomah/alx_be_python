@@ -15,7 +15,7 @@ class EBook(Book):
         self.file_size = file_size
 
     def get_details(self):
-        return f"Ebook: {self.title} by {self.author}, File Size: {self.file_size} KB"
+        return f"Ebook: {self.title} by {self.author}, File Size: {self.file_size}KB"
     
     def __str__(self):
         return self.get_details()
