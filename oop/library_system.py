@@ -35,7 +35,7 @@ class Library:
     def __init__(self):
         self.books = []    
 
-    def add_books(self,book):
+    def add_book(self,book):
         if isinstance(book,Book):
             self.books.append(book)
         else:
