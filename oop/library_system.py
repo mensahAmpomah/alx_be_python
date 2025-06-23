@@ -15,7 +15,7 @@ class EBook(Book):
         self.file_size = file_size
 
     def get_details(self):
-        return f"Ebook: {self.title} by {self.author}, File Size: {self.file_size}KB"
+        return f"EBook: {self.title} by {self.author}, File Size: {self.file_size}KB"
     
     def __str__(self):
         return self.get_details()
@@ -42,8 +42,5 @@ class Library:
             print("Only Book instances can be added.")
 
     def list_books(self):
-        if not self.books:
-            print("No books in the library.")
-        else:
-            for idx, book in enumerate(self.books, start = 1):
-                print(f"{idx}.{book.get_details()}")
+       for book in self.books:
+           print(book)
